@@ -5,7 +5,6 @@
 .coverage
 .env
 .envrc
-.kitchen.local.yml
 .kitchen/
 .ruby-gemset
 .ruby-version

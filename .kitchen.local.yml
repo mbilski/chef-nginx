@@ -9,13 +9,9 @@ platforms:
   - name: ubuntu-<%= ubver %>
     driver:
       platform: ubuntu
-      # Testing starting/stopping services inside a container needs an init
+      forward: 80
+      publish_all: true
       image: ubuntu-upstart:<%= ubver %>
       disable_upstart: false
       run_command: /sbin/init
 <% end %>
-
-  # @todo figure out how to test systemd in docker
-  # - name: ubuntu-15.04
-  #   driver:
-  #     run_command: /lib/systemd/systemd

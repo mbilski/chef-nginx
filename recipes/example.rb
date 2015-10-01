@@ -24,8 +24,7 @@ file '/etc/nginx-example/sites-enabled/default' do
       root /tmp;
       index index.html index.htm;
 
-      # Make site accessible from http://localhost/
-      server_name localhost;
+      server_name 0.0.0.0;
 
       location / {
         # First attempt to serve request as file, then
